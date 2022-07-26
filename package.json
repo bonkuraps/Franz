@@ -1,0 +1,25 @@
+{
+    "name": "franz",
+    "displayName": "Franz",
+    "description": "Franz is your Franca IDL best friend.",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.69.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "fidl",
+            "aliases": ["Franca", "fidl"],
+            "extensions": [".fidl",".fdepl",".cdepl"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "fidl",
+            "scopeName": "source.franca",
+            "path": "./syntaxes/fidl.tmLanguage.json"
+        }]
+    }
+}
